@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+//import AppRouter from './Routes.js';
+//import { StateProvider } from "./Store.js";
+import Home from "./Pages/Home.js"
+import About from "./Pages/About.js"
+import "./Styles/style.css";
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
+    <React.StrictMode>
+        <React.Fragment>
+        <Home />
+        <About />
+        </React.Fragment>
   </React.StrictMode>,
   document.getElementById('root')
 );
