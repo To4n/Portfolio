@@ -1,0 +1,192 @@
+.navbar-wrapper {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.portfolio-title {
+    color: $home-color;
+    font-weight: bolder;
+    font-size: 100%;
+    align-items: center;
+    margin-top:auto;
+    margin-bottom:auto;
+    
+    
+
+}
+
+.nav-links {
+    display: flex
+    ;
+    list-style: none
+    ;
+    height: 100%
+    ;
+    width: 50%
+    ;
+    justify-content: space-around
+    ;
+    align-items: center
+    ;
+    margin-left: auto
+    ;
+    
+    li {
+        color: white;
+        font-size: 100%;
+        display: inline-block;
+
+        &:hover {
+            color: $home-color;
+            //transform: scaleX(1.15);
+            transform: scale(1.15);
+            cursor: pointer;
+        }
+    }
+
+    li:after {
+        content: "";
+        display: block;
+        height: 2px;
+        // left: 50%;
+        margin-top: 1px;
+        background: $home-color;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    li:hover:after {
+        width: 100%;
+        // left: 0;
+    }
+}
+
+@media screen and (max-width: $desktop-breakpoint-phone) {
+    .hamburger {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        cursor: pointer;
+        transform: translate(-5%, -50%);
+        z-index: 4;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .nav-links {
+        z-index: 1;
+        text-align: center;
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        height: 100vh;
+        width: 100%;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 0.6s ease-out;
+        pointer-events: none;
+
+        li {
+            color: black;
+            display: block;
+            font-size: 100%;
+            font-weight: bold;
+            margin-top: 10%;
+
+            &:hover {
+                color: black;
+            
+            }
+        }
+
+
+        li:after {
+            background: black;
+        }
+    }
+
+    .open {
+        -webkit-clip-path: circle(1000px at 90% -20%);
+        clip-path: circle(1000px at 90% -20%);
+        pointer-events: all;
+        background-color: white;
+
+        @media (max-width: 30rem) {
+            -webkit-clip-path: circle(700px at 90% -20%);
+            clip-path: circle(700px at 90% -20%);
+        }
+    }
+}
+
+@media screen and (max-width: $desktop-breakpoint-sm-phone) {
+    .hamburger {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        cursor: pointer;
+        transform: translate(-5%, -50%);
+        z-index: 4;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .nav-links {
+        z-index: 1;
+        text-align: center;
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        height: 100vh;
+        width: 100%;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 0.6s ease-out;
+        pointer-events: none;
+
+        li {
+            color: black;
+            display: block;
+            font-size: 100%;
+            font-weight: bold;
+            margin-top: 20%;
+            margin-right: 10%;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        li:after {
+            background: black;
+        }
+    }
+
+    .open {
+        -webkit-clip-path: circle(1000px at 90% -20%);
+        clip-path: circle(1000px at 90% -20%);
+        pointer-events: all;
+        background-color: white;
+
+        @media (max-width: 30rem) {
+            -webkit-clip-path: circle(700px at 90% -20%);
+            clip-path: circle(700px at 90% -20%);
+        }
+    }
+}
+

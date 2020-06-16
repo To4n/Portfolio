@@ -1,19 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import AppRouter from './Routes.js';
-//import { StateProvider } from "./Store.js";
-import Home from "./Pages/Home.js"
-import About from "./Pages/About.js"
-import "./Styles/style.css";
+import AppRouter from './Routes.js';
+import { StateProvider } from "./Store.js";
+import "./Styles/style.scss";
 import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
     <React.StrictMode>
-        <React.Fragment>
-        <Home />
-        <About />
-        </React.Fragment>
+        <StateProvider>
+            <AppRouter />
+        </StateProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
