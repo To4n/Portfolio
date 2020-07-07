@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 //import Contact from './Contact';
 import About from "./About";
-//import Projects from './Projects';
+import Projects from './Projects';
 import { store } from "../Store";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,10 +30,11 @@ function Home() {
             case "aboutRef":
                 scrollToRef(aboutRef);
                 break;
-            /*
+            
             case "projectRef":
                 scrollToRef(projectRef);
                 break;
+            /*
             case "contactRef":
                 scrollToRef(contactRef);
                 break;
