@@ -10,6 +10,10 @@
         font-size: $font-size-small;
     }
 }
+.section-title{
+    margin-bottom:20px;
+    margin-top:40px;
+}
 .about-wrapper {
     margin-top: -5px;
     background-color: $theme-color-1;
@@ -25,12 +29,18 @@
         left: 0px;
         bottom: 0px;
         background: linear-gradient(to left top, black 49.5%, transparent 50%);
+
+        @media (max-width: $desktop-breakpoint-phone) {
+            display:none;
+        }
     }
 }
 .profile-image {
     width: 200px;
     height: auto;
     margin-bottom: 1rem;
+    border-style:solid;
+    border-color:white;
 }
 .diamond-img {
     max-width: 100%;
