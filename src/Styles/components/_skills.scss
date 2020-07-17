@@ -1,0 +1,39 @@
+.skills-title {
+    font-size: $font-size-large;
+    font-weight:bolder;
+    display:block;
+    align-content:center;
+    text-align:center;
+    width:100%;
+    height:auto;
+    background-color:red;
+    color:white;
+    margin-bottom:35px;
+
+}
+.skill{
+    background-color:blue;
+    color:white;
+    width:400px;
+    height:auto;
+    text-align:center;
+    display:block;
+    overflow:hidden;
+    padding-top:10px;
+
+}
+
+.sr-logo{
+    height:56px;
+    width:56px;
+}
+
+.service-box h3 {
+    margin-bottom: 30px;
+    display: block;
+    padding-top:10px;
+    font-size: $font-size-medium;
+}
+
+
+
