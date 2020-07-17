@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 //import Contact from './Contact';
 import About from "./About";
+import Skills from "./Skills";
 import Projects from './Projects';
 import { store } from "../Store";
 import AOS from 'aos';
@@ -18,6 +19,7 @@ function Home() {
     const aboutRef = React.createRef();
     const projectRef = React.createRef();
     const contactRef = React.createRef();
+    const skillRef = React.createRef();
     const globalState = React.useContext(store);
     
     React.useEffect(() => {
@@ -33,6 +35,9 @@ function Home() {
             
             case "projectRef":
                 scrollToRef(projectRef);
+                break;
+            case "skillRef":
+                scrollToRef(skillRef);
                 break;
             /*
             case "contactRef":
@@ -142,7 +147,9 @@ function Home() {
             <div ref={aboutRef} >
                 <div data-aos="fade-down"><About /></div>
             </div>
-            
+            <div ref={skillRef} style={{ background: 'black' }}>
+                <div data-aos="flip-up"><Skills /></div>
+            </div>
             
 
         </div>
