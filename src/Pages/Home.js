@@ -50,24 +50,26 @@ function Home() {
         <div className="ml-md-1 media-wrapper">
             <div className=" git">
                 <span>
-                    <a href="https://www.linkedin.com/in/duytruongfdp/" target="_blank"><i className="fa fa-linkedin" ></i></a>
+                    <a href="https://www.linkedin.com/in/toan-d-dao/" target="_blank"><i className="fa fa-linkedin" ></i></a>
                 </span>
             </div>
             <div className=" email">
                 <span>
-                    <a href="https://github.com/duytruong0916" target="_blank"><i className="fa fa-github icon" ></i></a>
+                    <a href="https://github.com/To4n" target="_blank"><i className="fa fa-github icon" ></i></a>
                 </span>
             </div>
             <div className=" fb">
                 <span>
-                    <a href="https://www.facebook.com/nhatduy.truong.90" target="_blank"><i className="fa fa-facebook icon" ></i></a>
+                    <a href="https://www.facebook.com/d.Toandao" target="_blank"><i className="fa fa-facebook icon" ></i></a>
                 </span>
             </div>
+               
             <div className=" last">
                 <span>
-                    <a href="https://www.instagram.com/nhatduy.truong.90/" target="_blank"><i className="fa fa-instagram icon" ></i></a>
+                    <a href="" target="_blank"><i className="fa fa-envelope-o icon" ></i></a>
                 </span>
             </div>
+                    
         </div>
     );
     const renderHome = () => (
