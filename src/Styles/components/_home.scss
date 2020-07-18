@@ -7,74 +7,39 @@
 }
 
 .hello-message-1 {
-    font-size: $font-size-xlarge;
-    font-weight: bolder;
-    position: relative;
-    
+    font-size: $font-size-xtitle;
+    color: white;
+    font-weight: 700;
+    //position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align:center;
+    @media (max-width: $desktop-breakpoint-sm-phone) {
+        font-size: $font-size-xlarge;
+    }
 }
 
 .hello-message-2 {
     font-size: $font-size-large;
+    color: white;
     font-weight: lighter;
     position: relative;
-   
-}
+    text-align: center;
 
-.hello-message-3 {
-    font-size: $font-size-large;
-    font-weight: bolder;
-    color: white;
-    position: relative;
-   
-}
-
-@media (max-width: $desktop-breakpoint-phone) {
-    .hello-message-1 {
-        font-size: $font-size-large;
-        color: white;
-        font-weight: bolder;
-    }
-
-    .hello-message-2 {
-        font-size: $font-size-medium;
-        color: white;
-        font-weight: lighter;
-    }
-
-    .hello-message-3 {
-        font-size: $font-size-medium;
-        color: $home-color;
-        font-weight: bolder;
-    }
-
-
-}
-@media (max-width: $desktop-breakpoint-sm-phone) {
-    .hello-message-1 {
-        font-size: $font-size-medium;
-        color: white;
-        font-weight: bolder;
-    }
-
-    .hello-message-2 {
+    @media (max-width: $desktop-breakpoint-sm-phone) {
         font-size: $font-size-small;
-        color: white;
-        font-weight: lighter;
-    }
-
-    .hello-message-3 {
-        font-size: $font-size-small;
-        color: $home-color;
-        font-weight: bolder;
     }
 }
+
+
+
 
 .media-wrapper {
     background-color: transparent;
     z-index: 11;
     position: absolute;
     top: 10%;
-    left: 2%;
+    left: 4%;
 
 
     @media (max-width: $desktop-breakpoint-phone) {
@@ -107,33 +72,37 @@
 
 .button-link {
     position: relative;
-    top: 8rem;
-    right: 13rem;
+    width:70px;
+    height:70px;
+    margin-top:15px;
+    padding: 7px 16px;
+    cursor:pointer;
     outline: none !important;
     z-index: 11;
-    border: none;
+    border: 2px solid #fff;
     font-size: $font-size-small;
     color: white;
     text-align: center;
-    //width: 180px;
-    background-color: #2a4698;
+    background-color: $theme-color-3;
     //padding: 10px;    transition: 0.5s;
-    border-radius: 2rem;
+    border-radius: 100%;
 
 
     @media screen and (max-width:$desktop-breakpoint-phone) {
-        font-size: $font-size-xsmall;
-        right: 8rem;
+        font-size: $font-size-xlarge;
+        //right: 8rem;
+        top:7.5rem;
     }
 
     @media screen and (max-width:$desktop-breakpoint-sm-phone) {
-        font-size: $font-size-xsmall;
-        right: 2rem;
+        font-size: $font-size-xlarge;
+        //right: 2rem;
+        top: 7.5rem;
     }
 
 
     &:hover {
-        background-color: white;
+        background-color: $theme-color-2;
         color: #2a4698;
         cursor: pointer;
 
@@ -173,7 +142,7 @@
     bottom: 0; 
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top,$theme-color-1, transparent);
+    background: linear-gradient(to top,black, transparent);
     z-index: 10;
 }
 .section::after {
@@ -183,7 +152,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: $theme-color-1;
+    background: $theme-color-5;
     z-index: 10;
     //background: linear-gradient(to top,$theme-color-1, transparent);
     mix-blend-mode: color;

@@ -88,15 +88,16 @@ function Home() {
                     <img src={mountain} id="mountain" />
                     <img src={road} id="road" />
                 <Row >
-                    <Col xs={{offset:2,span:10}} md={{ offset: 4, span: 8 }} className="text hello-message-1 text-white">Hi, I'm Toan, </Col>
-                    <Col xs={{ offset: 2, span: 10 }} md={{ offset: 4, span: 8 }} className="text hello-message-2 text-white">a web developer specialized in </Col>
-                    <Col xs={{ offset: 2, span: 10 }} md={{ offset: 4, span: 8 }} className="text hello-message-3 ">front-end development.</Col>
-                    <Col xs={{ offset: 2, span: 10 }} md={{ offset: 4, span: 8 }} className=" text-center">
+                    <Col md={{ span: 8, offset: 2 }}>
+                    <h1  className="text hello-message-1 ">TOAN DAO </h1>
+                    <p  className="text hello-message-2 ">Web Developer </p>
 
-                        <button  className="button-link " onClick={() => scrollToRef(projectRef)}>
-                        <span>View My Work</span>
-                        <span className="ml-3"><i class="fa fa-long-arrow-right rotate-arrow" aria-hidden="true"></i></span>
+                    <div  className=" text-center">
+
+                            <button className="btn btn-circle button-link " onClick={() => scrollToRef(aboutRef)}>
+                                <i className="fa fa-angle-double-down animated"></i>
                         </button>
+                        </div>
                     </Col>
                 </Row>   
 
@@ -118,9 +119,8 @@ function Home() {
         let road = document.getElementById("road");
         let text1 = document.getElementsByClassName("text")[0];
         let text2 = document.getElementsByClassName("text")[1];
-        let text3 = document.getElementsByClassName("text")[2];
         
-
+        
         window.addEventListener('scroll', function () {
             var value = window.scrollY;
             bg.style.top = value * 0.5 + 'px';
@@ -129,8 +129,7 @@ function Home() {
             road.style.top = value * 0.15 + 'px';
             text1.style.top = value * 1 + 'px';
             text2.style.top = value * 1 + 'px';
-            text3.style.top = value * 1 + 'px';
-           
+            
         });
         
     }, []);

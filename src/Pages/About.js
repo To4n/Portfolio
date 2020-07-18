@@ -26,7 +26,7 @@ function About(props) {
     return (
         <div className="about-wrapper align-items-center ">
             <Row>
-                <Col className="section-title mx-auto text-center" xs={{ offset: 3, span: 9 }} md={{ offset: 4, span: 8 }}>About me</Col>
+                <Col className="section-title mx-auto text-center" xs={{ offset: 3, span: 9 }} md={{ offset: 4, span: 8 }}>ABOUT ME</Col>
 
             </Row>
            

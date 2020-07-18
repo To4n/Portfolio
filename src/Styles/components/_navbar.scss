@@ -12,7 +12,7 @@
 .portfolio-title {
     color: $home-color;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 30px;
     align-items: center;
     margin-top:auto;
     margin-bottom:auto;
@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (max-width: $desktop-breakpoint-phone) {
+@media screen and (max-width: $desktop-breakpoint-sm-phone) {
     .hamburger {
         position: absolute;
         top: 50%;
