@@ -19,7 +19,7 @@
     margin-top: -5px;
     background-color: $theme-color-1;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 80vh;
 
     
 }
@@ -48,5 +48,10 @@
     color: $theme-color-1;
     font-weight: lighter;
     font-size: $font-size-large;
+}
+
+.type-writer {
+    
+    padding: 10px;
 }
 

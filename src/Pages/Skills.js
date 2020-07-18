@@ -22,7 +22,7 @@ function Skills(props) {
                         <Col lg={3} md={6} className="skill text-center ">
                             <div className="service-box">
                                 <i className="sr-icon">
-                                    <img className="sr-logo" src={html} alt="html" />
+                                    <img className="sr-logo flip" src={html} alt="html" />
                                 </i>
                                 <h3>HTML</h3>
                             </div>
@@ -30,7 +30,7 @@ function Skills(props) {
                         <Col lg={3} md={6} className="skill text-center">
                             <div className="service-box">
                                 <i className="sr-icon">
-                                    <img className="sr-logo" src={css3} alt="css" />
+                                    <img className="sr-logo flip" src={css3} alt="css" />
                                 </i>
                                 <h3>CSS</h3>
                             </div>
@@ -40,7 +40,7 @@ function Skills(props) {
                     <Col lg={3} md={6} className="skill text-center">
                             <div className="service-box">
                                 <i className="sr-icon">
-                                    <img className="sr-logo" src={javascript} alt="javascript" />
+                                    <img className="sr-logo flip" src={javascript} alt="javascript" />
                                 </i>
                                 <h3>JAVASCRIPT</h3>
                             </div>    
@@ -48,7 +48,7 @@ function Skills(props) {
                     <Col lg={3} md={6} className="skill text-center">
                             <div className="service-box">
                                 <i className="sr-icon">
-                                    <img className="sr-logo" src={react} alt="react" />
+                                    <img className="sr-logo spin" src={react} alt="react" />
                                 </i>
                                 <h3>REACT</h3>
                             </div>
@@ -58,7 +58,7 @@ function Skills(props) {
                     <Col lg={3} md={6} className="skill text-center">
                             <div className="service-box">
                                 <i className="sr-icon">
-                                    <img className="sr-logo" src={node} alt="node" />
+                                    <img className="sr-logo spin" src={node} alt="node" />
                                 </i>
                                 <h3>NODE.JS</h3>
                             </div>
@@ -66,7 +66,7 @@ function Skills(props) {
                     <Col lg={3} md={6} className="skill text-center">
                             <div className="service-box">
                                 <i className="sr-icon">
-                                    <img className="sr-logo" src={mysql} alt="mysql" />
+                                    <img className="sr-logo spin" src={mysql} alt="mysql" />
                                 </i>
                                 <h3>MYSQL</h3>
                             </div>

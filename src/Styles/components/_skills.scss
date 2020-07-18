@@ -16,15 +16,34 @@
     height:auto;
     //text-align:center;
     display:block;
-    overflow:hidden;
+    //overflow:hidden;
     padding-top:10px;
 
 }
 
-.sr-logo{
-    height:56px;
-    width:56px;
+.sr-logo {
+    height: 56px;
+    width: 56px;
+    
 }
+.spin {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+.spin:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.flip {
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+.flip:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(-180deg);
+}
+
+
 
 .service-box h3 {
     margin-bottom: 30px;
@@ -38,8 +57,9 @@
     //width:100%;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding-top:40px;
+    
 }
 
 .skill-background {
@@ -51,7 +71,6 @@
     object-fit: cover;
     pointer-events: none;
     transform:rotate(180deg);
-    overflow:hidden;
     
 }
 
@@ -61,18 +80,5 @@
 }
 
 
-.download-section::before {
-    content: '';
-    background: linear-gradient(to top,$theme-color-1, transparent);
-    z-index: 10;
-}
-
-.download-section::after {
-    content: '';
-    background: $theme-color-2;
-    z-index: 10;
-    //background: linear-gradient(to top,$theme-color-1, transparent);
-    mix-blend-mode: color;
-}
 
 

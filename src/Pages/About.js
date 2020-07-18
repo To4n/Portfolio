@@ -10,15 +10,14 @@ function About(props) {
     const renderProfile = () => (
         <div className="content ">
             <div className="text-center"><img src={profile} className="profile-image diamond-img shadow" /></div>
-            <div className="mt-3 text-center">
-                <span className="bold">A </span>
-                <span className="hightlight">front-end web developer</span>
-                <span className="bold"> with over </span>
-                <span className="hightlight">2 years of experience.</span>
-            </div>
-            <div className="text-center">
+            <div className="type-writer">
+            <p className="type text-center ">
+                A front-end web developer with over 2 years of experience.
+            </p>
+            <p className="type text-center ">
                 I have serious passion for UI effects, animations and creating intuitive,
-                dynamic user experiences.
+            dynamic user experiences.
+            </p>
             </div>
         </div>
 
@@ -31,8 +30,8 @@ function About(props) {
 
             </Row>
            
-            <Row xs={{ offset: 2, span: 10 }} md={{ offset: 4, span: 8 }} className="content-wrapper">
-                <Col xs={12} xl={12}>
+            <Row >
+                <Col className="content-wrapper ">
                     {renderProfile()}
                 </Col>
             </Row>
