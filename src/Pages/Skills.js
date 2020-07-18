@@ -17,9 +17,9 @@ function Skills(props) {
                 <div className="skills-title">SKILLS</div>
             </Row>
             <Row className="justify-content-around text-center">
-                <div className="skills-list ">
-                    <Row className="justify-content-around text-center">
-                        <Col lg={3} md={6} className="skill ">
+                
+                    
+                        <Col lg={3} md={6} className="skill text-center ">
                             <div className="service-box">
                                 <i className="sr-icon">
                                     <img className="sr-logo" src={html} alt="html" />
@@ -35,9 +35,9 @@ function Skills(props) {
                                 <h3>CSS</h3>
                             </div>
                         </Col>
-                    </Row>
-                    <Row className="justify-content-around">
-                        <Col lg={3} md={6} className="skill">
+                    
+                    
+                    <Col lg={3} md={6} className="skill text-center">
                             <div className="service-box">
                                 <i className="sr-icon">
                                     <img className="sr-logo" src={javascript} alt="javascript" />
@@ -45,7 +45,7 @@ function Skills(props) {
                                 <h3>JAVASCRIPT</h3>
                             </div>    
                         </Col>
-                        <Col lg={3} md={6} className="skill">
+                    <Col lg={3} md={6} className="skill text-center">
                             <div className="service-box">
                                 <i className="sr-icon">
                                     <img className="sr-logo" src={react} alt="react" />
@@ -53,9 +53,9 @@ function Skills(props) {
                                 <h3>REACT</h3>
                             </div>
                         </Col>
-                    </Row>
-                    <Row className="justify-content-around">
-                        <Col lg={3} md={6} className="skill">
+                    
+                    
+                    <Col lg={3} md={6} className="skill text-center">
                             <div className="service-box">
                                 <i className="sr-icon">
                                     <img className="sr-logo" src={node} alt="node" />
@@ -63,7 +63,7 @@ function Skills(props) {
                                 <h3>NODE.JS</h3>
                             </div>
                         </Col>
-                        <Col lg={3} md={6} className="skill">
+                    <Col lg={3} md={6} className="skill text-center">
                             <div className="service-box">
                                 <i className="sr-icon">
                                     <img className="sr-logo" src={mysql} alt="mysql" />
@@ -71,8 +71,8 @@ function Skills(props) {
                                 <h3>MYSQL</h3>
                             </div>
                         </Col>
-                     </Row>
-                </div>
+                     
+                
             </Row>
         </div>        
         );

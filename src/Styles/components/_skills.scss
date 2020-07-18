@@ -12,9 +12,9 @@
 }
 .skill{
     color:white;
-    width:400px;
+    width:200px;
     height:auto;
-    text-align:center;
+    //text-align:center;
     display:block;
     overflow:hidden;
     padding-top:10px;
@@ -61,15 +61,17 @@
 }
 
 
-.skill-background::before {
+.download-section::before {
+    content: '';
     background: linear-gradient(to top,$theme-color-1, transparent);
     z-index: 10;
 }
 
-.skill-background::after {
+.download-section::after {
+    content: '';
     background: $theme-color-2;
     z-index: 10;
-    background: linear-gradient(to top,$theme-color-1, transparent);
+    //background: linear-gradient(to top,$theme-color-1, transparent);
     mix-blend-mode: color;
 }
 

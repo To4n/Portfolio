@@ -26,7 +26,7 @@ function Navbar(props) {
 
     return (
         <>
-            <div className="navbar-wrapper" style={{ background: `${navBackground ? 'rgba(0, 0, 0, 0.25)' : 'transparent'}` }}>
+            <div className="navbar-wrapper" style={{ background: `${navBackground ? 'rgba(0, 0, 0, 0.95)' : 'transparent'}` }}>
                 
                 <div className="portfolio-title px-md-3 p-2" style={{ opacity: `${navBackground ? 0 : 1}`, transition: '1.75s' }}>Portfolio</div>
                 

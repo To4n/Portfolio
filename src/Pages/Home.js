@@ -148,7 +148,7 @@ function Home() {
                 <div data-aos="fade-down"><About /></div>
             </div>
             <div ref={skillRef} style={{ background: 'black' }}>
-                <div data-aos="fade-down"><Skills /></div>
+                <div data-aos="fade"><Skills /></div>
             </div>
             
 
