@@ -6,13 +6,11 @@
     text-align:center;
     width:100%;
     height:auto;
-    background-color:red;
     color:white;
     margin-bottom:35px;
 
 }
 .skill{
-    background-color:blue;
     color:white;
     width:400px;
     height:auto;
@@ -33,7 +31,46 @@
     display: block;
     padding-top:10px;
     font-size: $font-size-medium;
+    font-weight:bold;
 }
 
+.download-section {
+    //width:100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding-top:40px;
+}
+
+.skill-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    transform:rotate(180deg);
+    overflow:hidden;
+    
+}
+
+
+#bg{
+    z-index:-2;
+}
+
+
+.skill-background::before {
+    background: linear-gradient(to top,$theme-color-1, transparent);
+    z-index: 10;
+}
+
+.skill-background::after {
+    background: $theme-color-2;
+    z-index: 10;
+    background: linear-gradient(to top,$theme-color-1, transparent);
+    mix-blend-mode: color;
+}
 
 

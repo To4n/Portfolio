@@ -7,10 +7,12 @@ import mysql from '../assets/mysql-icon.png';
 import css3 from '../assets/css3-original.svg';
 import react from '../assets/react-logo.png';
 import node from '../assets/Node.svg';
-
+import bg from '../assets/bg.jpg';
 function Skills(props) {
     const renderSkills = () => (
         <div className="download-section">
+            
+            <img className="skill-background" src={bg} id="bg" alt="background" />
             <Row>
                 <div className="skills-title">SKILLS</div>
             </Row>
@@ -74,7 +76,19 @@ function Skills(props) {
             </Row>
         </div>        
         );
+    React.useEffect(() => {
+        let bg = document.getElementById("bg");
+        
+        
 
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            
+            
+        });
+
+    }, []);
 
     
     return (
