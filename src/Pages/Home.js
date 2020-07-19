@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-//import Contact from './Contact';
+import Contact from './Contact';
 import About from "./About";
 import Skills from "./Skills";
 import Projects from './Projects';
@@ -39,11 +39,11 @@ function Home() {
             case "skillRef":
                 scrollToRef(skillRef);
                 break;
-            /*
+            
             case "contactRef":
                 scrollToRef(contactRef);
                 break;
-                */
+                
             default:
                 break;
         }
@@ -111,7 +111,7 @@ function Home() {
         </div>
         
     );
-
+    
     React.useEffect(() => {
         let bg = document.getElementById("bg");
         let moon = document.getElementById("moon");
@@ -149,7 +149,9 @@ function Home() {
             <div ref={skillRef} >
                 <div data-aos="flip-up"><Skills /></div>
             </div>
-            
+            <div ref={contactRef} style={{ background: 'black' }}>
+                <div data-aos="zoom-in"><Contact /></div>
+            </div>
 
         </div>
     );

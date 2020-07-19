@@ -1,0 +1,62 @@
+.contact-portion {
+    padding-top: 150px;
+
+    @media (max-width: $desktop-breakpoint-phone) {
+        padding-top: 100px;
+    }
+}
+
+.contact-portion h2 {
+    color: $theme-color-4;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: $font-size-large;
+    padding-bottom:10px;
+    
+}
+
+.contact-portion p {
+    color: $theme-color-4;
+    font-size: $font-size-xsmall;
+    padding:0 20px 0 20px;
+}
+
+.contact-media-wrapper {
+    color: $theme-color-4;
+
+
+    i {
+        text-align: center;
+        border: 2px solid;
+        padding: 6px 4px 4px 4px;
+        width: 40px;
+        height: 40px;
+        margin: 2rem 2rem 0 2rem;
+        color: $theme-color-4;
+        font-size: $font-size-medium;
+        transition: all 0.5s ease;
+
+        @media (max-width: $desktop-breakpoint-phone) {
+            font-size: $font-size-medium;
+            margin: 2rem 1rem 0 1rem;
+        }
+
+        &:hover {
+            color: white;
+            transform: scale(1.25);
+
+            @media (max-width: $desktop-breakpoint-phone) {
+                color: white;
+                transform: scale(1.25);
+            }
+        }
+    }
+}
+
+.list-inline > li{
+    list-style:none;
+    padding:0;
+    display:inline;
+}
+
+

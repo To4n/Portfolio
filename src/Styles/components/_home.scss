@@ -80,14 +80,14 @@
     outline: none !important;
     z-index: 11;
     border: 2px solid #fff;
-    font-size: $font-size-small;
-    color: white;
+    font-size: $font-size-xlarge;
+    color: $theme-color-1;
     text-align: center;
-    background-color: $theme-color-3;
+    font-weight:400;
+    //background-color: $theme-color-3;
     //padding: 10px;    transition: 0.5s;
     border-radius: 100%;
-
-
+    border-color:$theme-color-1;
     @media screen and (max-width:$desktop-breakpoint-phone) {
         font-size: $font-size-xlarge;
         //right: 8rem;
@@ -102,14 +102,12 @@
 
 
     &:hover {
-        background-color: $theme-color-2;
-        color: #2a4698;
+        //background-color: $theme-color-2;
         cursor: pointer;
+        transform:scale(1.2);
+        
 
-        .rotate-arrow {
-            transform: rotate(90deg) !important;
-            transition: 0.5s;
-        }
+        
     }
 }
 .section {
