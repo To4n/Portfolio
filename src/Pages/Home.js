@@ -10,7 +10,6 @@ import 'aos/dist/aos.css';
 import Navbar from './Navbar';
 //import profile from '../assets/profile.png';
 import bg from '../assets/bg.jpg'
-import moon from '../assets/moon.png'
 import mountain from '../assets/mountain.png'
 import road from '../assets/road.png'
 
@@ -78,13 +77,11 @@ function Home() {
         </div>
     );
     const renderHome = () => (
-        <div className="">
-            
-               
-                
+        <div>
+        <div className="home-laptop">           
+                              
                 <div className="section align-item-center">
                     <img src={bg} id="bg" />
-                    <img src={moon} id="moon" />
                     <img src={mountain} id="mountain" />
                     <img src={road} id="road" />
                 <Row >
@@ -102,19 +99,34 @@ function Home() {
                 </Row>   
 
                     
-                </div>
-                
-                
-                
-                    
-            
+                </div> 
+        </div>
+        <div className="home-phone">
+
+            <div className="section align-item-center">
+                <img src={bg} id="bg" />
+                <Row >
+                    <Col md={{ span: 8, offset: 2 }}>
+                        <h1 className="hello-message-1 ">TOAN DAO </h1>
+                        <p className="hello-message-2 ">Web Developer </p>
+
+                        <div className=" text-center">
+                            <button className="btn btn-circle button-link " onClick={() => scrollToRef(aboutRef)}>
+                                <i className="fa fa-angle-double-down animated"></i>
+                            </button>
+                        </div>
+                    </Col>
+                </Row>
+
+
+            </div>
+            </div>
         </div>
         
     );
     
     React.useEffect(() => {
         let bg = document.getElementById("bg");
-        let moon = document.getElementById("moon");
         let mountain = document.getElementById("mountain");
         let road = document.getElementById("road");
         let text1 = document.getElementsByClassName("text")[0];
@@ -124,7 +136,6 @@ function Home() {
         window.addEventListener('scroll', function () {
             var value = window.scrollY;
             bg.style.top = value * 0.5 + 'px';
-            moon.style.left = -value * 0.5 + 'px';
             mountain.style.top = -value * 0.15 + 'px';
             road.style.top = value * 0.15 + 'px';
             text1.style.top = value * 1 + 'px';
