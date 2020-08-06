@@ -79,6 +79,25 @@ function Home() {
     );
     const renderHome = () => (
         <div>
+            <div className="home-phone" >
+                <img className="phone-background" src={bgphone} id="bgphone" alt="background" />
+                <div className="section align-item-center">
+                    <Row >
+                        <Col md={{ span: 8, offset: 2 }}>
+                            <h1 className="hello-message-1 ">TOAN DAO </h1>
+                            <p className="hello-message-2 ">Web Developer </p>
+
+                            <div className=" text-center">
+                                <button className="btn btn-circle button-link " onClick={() => scrollToRef(aboutRef)}>
+                                    <i className="fa fa-angle-double-down animated"></i>
+                                </button>
+                            </div>
+                        </Col>
+                    </Row>
+
+
+                </div>
+            </div>
         <div className="home-laptop">           
                               
                 <div className="section align-item-center">
@@ -102,25 +121,7 @@ function Home() {
                     
                 </div> 
         </div>
-            <div className="home-phone" >
-            <img className="phone-background" src={bgphone} id="bgphone" alt="background" />
-            <div className="section align-item-center">
-                <Row >
-                    <Col md={{ span: 8, offset: 2 }}>
-                        <h1 className="hello-message-1 ">TOAN DAO </h1>
-                        <p className="hello-message-2 ">Web Developer </p>
 
-                        <div className=" text-center">
-                            <button className="btn btn-circle button-link " onClick={() => scrollToRef(aboutRef)}>
-                                <i className="fa fa-angle-double-down animated"></i>
-                            </button>
-                        </div>
-                    </Col>
-                </Row>
-
-
-            </div>
-            </div>
         </div>
         
     );

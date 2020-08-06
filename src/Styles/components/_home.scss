@@ -8,7 +8,7 @@
 .home-phone {
     display: block;
 
-    @media (min-width: 767px ) {
+    @media (min-width: 767.5px ) {
         display: none;
     }
 }
@@ -30,7 +30,7 @@
 }
 .home-laptop {
     display:block;
-    @media (max-width: $desktop-breakpoint-sm-phone) {
+    @media (max-width: 767px) {
         display:none;
     }
 }
