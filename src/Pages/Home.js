@@ -78,7 +78,7 @@ function Home() {
         </div>
     );
     const renderHome = () => (
-        <div>
+        <div className="home-wrapper">
             <div className="home-phone" >
                 <img className="phone-background" src={bgphone} id="bgphone" alt="background" />
                 <div className="section align-item-center">
