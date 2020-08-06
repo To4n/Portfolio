@@ -12,6 +12,22 @@
         display: none;
     }
 }
+
+.phone-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
+
+
+#bgphone {
+    z-index: -2;
+}
 .home-laptop {
     display:block;
     @media (max-width: $desktop-breakpoint-sm-phone) {
@@ -39,7 +55,7 @@
     text-align: center;
 
     @media (max-width: $desktop-breakpoint-sm-phone) {
-        font-size: $font-size-small;
+        font-size: $font-size-medium;
     }
 }
 
@@ -141,6 +157,7 @@
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+
     
 }
 
