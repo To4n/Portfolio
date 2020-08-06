@@ -21,17 +21,30 @@
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    overflow:hidden;
     
 }
-
 
 #bgphone {
     z-index: -2;
 }
+
+.sectionphone {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:0;
+}
 .home-laptop {
-    display:block;
+    display: block;
+
     @media (max-width: 767px) {
-        display:none;
+        display: none;
     }
 }
 .hello-message-1 {
@@ -161,15 +174,16 @@
     
 }
 
-.section::before
-{
-    content:'';
+.section::before {
+    content: '';
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     width: 100%;
     height: 100px;
     background: linear-gradient(to top,black, transparent);
     z-index: 10;
+
+    
 }
 .section::after {
     content: '';
@@ -182,6 +196,8 @@
     z-index: 10;
     //background: linear-gradient(to top,$theme-color-1, transparent);
     mix-blend-mode: color;
+
+    
 }
 .text{
     position: relative;

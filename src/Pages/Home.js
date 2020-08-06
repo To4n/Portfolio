@@ -81,7 +81,7 @@ function Home() {
         <div className="home-wrapper">
             <div className="home-phone" >
                 <img className="phone-background" src={bgphone} id="bgphone" alt="background" />
-                <div className="section align-item-center">
+                <div className="sectionphone align-item-center">
                     <Row >
                         <Col md={{ span: 8, offset: 2 }}>
                             <h1 className="hello-message-1 ">TOAN DAO </h1>
