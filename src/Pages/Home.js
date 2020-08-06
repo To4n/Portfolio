@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 import Navbar from './Navbar';
 //import profile from '../assets/profile.png';
 import bg from '../assets/bg.jpg'
-import bg-2 from '../assets/bg-2.jpg'
+import bgphone from '../assets/bg-2.jpg'
 import mountain from '../assets/mountain.png'
 import road from '../assets/road.png'
 
@@ -105,7 +105,7 @@ function Home() {
         <div className="home-phone">
 
             <div className="section align-item-center">
-                <img src={bg-2} id="bg-2" />
+                <img src={bgphone} id="bgphone" />
                 <Row >
                     <Col md={{ span: 8, offset: 2 }}>
                         <h1 className="hello-message-1 ">TOAN DAO </h1>
