@@ -149,25 +149,16 @@ function Home() {
             <div ref={skillRef} >
                 <div data-aos="flip-up"><Skills /></div>
             </div>
+            <div ref={projectRef} >
+                <div data-aos="flip-up"><Projects /></div>
+            </div>
             <div ref={contactRef} style={{ background: 'black' }}>
                 <div data-aos="zoom-in"><Contact /></div>
             </div>
 
         </div>
     );
-            /*
-            <div ref={aboutRef} style={{ background: 'black' }}>
-                <div data-aos="flip-up"><About /></div>
-            </div>
-            /*
-            <div ref={projectRef} className="bg-white">
-                <div data-aos="fade"><Projects /></div>
-            </div>
-            <div ref={contactRef} className="bg-white">
-                <div data-aos="zoom-in"><Contact /></div>
-            </div>
-
-     */
+            
 
 }
 export default Home;
