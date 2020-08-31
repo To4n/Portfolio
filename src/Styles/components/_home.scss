@@ -147,7 +147,7 @@
         color: $theme-color-5 !important;
         cursor: pointer;
         transition: ease-in-out;
-        animation: 1s impulse infinite alternate-reverse;
+        //animation: 1s impulse infinite alternate-reverse;
 
     }
 
@@ -225,22 +225,5 @@
 }
 
 
-
-.link-2 {
-    animation-name: appear;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    width: 180px;
-  }
-  to {
-    opacity: 1;
-    width: 180px;
-  }
-}
 
 
