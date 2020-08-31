@@ -115,18 +115,17 @@
     position: relative;
     width: 70px;
     height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
+    margin-top: auto;
+    margin-bottom: auto;
     cursor: pointer;
     outline: none !important;
     z-index: 11;
-    border: 4px solid $theme-color-2;
+    border: 5px solid $home-color;
     font-size: $font-size-xlarge;
-    color: $theme-color-2;
+    color: $home-color;
     text-align: center;
-    font-weight: 400;
     border-radius: 100%;
-
+    transition: ease-in-out;
     @media screen and (max-width:$desktop-breakpoint-phone) {
         font-size: $font-size-xlarge;
         //right: 8rem;
@@ -143,11 +142,22 @@
 
 
     &:hover {
-        background-color: $theme-color-2;
+        background-color: white !important;
+        border-color: white !important;
+        color: $theme-color-5 !important;
         cursor: pointer;
-        //transform: scale(1.2);
         transition: ease-in-out;
-        
+        animation: 1s impulse infinite alternate-reverse;
+
+    }
+
+    @keyframes impulse{
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 50%;
+    }
     }
 }
 .section {
@@ -219,29 +229,7 @@
     animation-duration: 1.5s;
     animation-iteration-count: 1;
 }
-/*
-.hello-message-1 {
-  width: 6em;
-  -webkit-animation: blinktextcurser 0.5s steps(50) 2 normal,
-    typewriter 0.5s steps(30) 0.5s 1 normal both;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.hello-message-2 {
-  width: 16em;
-  -webkit-animation: blinktextcurser 0.5s steps(50) 2 1s normal,
-    typewriter2 1s steps(30) 1s 1 normal both;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.hello-message-3 {
-  width: 12em;
-  -webkit-animation: blinktextcurser 0.5s steps(50) infinite 2s normal,
-    typewriter3 1s steps(30) 2s 1 normal both;
-  overflow: hidden;
-  white-space: nowrap;
-}
-    */
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -253,36 +241,4 @@
   }
 }
 
-@keyframes typewriter {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 6em;
-  }
-}
-@keyframes typewriter2 {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 15em;
-  }
-}
-@keyframes typewriter3 {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 12em;
-  }
-}
-@keyframes blinktextcurser {
-  from {
-    border-right: 0px;
-  }
-  to {
-    border-right: 1px solid white;
-  }
-}
 

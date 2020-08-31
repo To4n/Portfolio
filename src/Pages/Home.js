@@ -21,7 +21,10 @@ function Home() {
     const contactRef = React.createRef();
     const skillRef = React.createRef();
     const globalState = React.useContext(store);
-    
+    const [showButton, setShowButton] = React.useState(false);
+    const buttonRef = React.useRef();
+    buttonRef.current = showButton;
+
     React.useEffect(() => {
         AOS.init({ duration: 700, delay: 100 });
         switch (globalState.state.refName) {
@@ -111,7 +114,7 @@ function Home() {
 
                     <div  className=" text-center">
 
-                            <button className="btn btn-circle button-link " onClick={() => scrollToRef(aboutRef)}>
+                            <button style={{opacity : `${showButton ? 0 : 1}`}} className="btn btn-circle button-link " onClick={() => scrollToRef(aboutRef)}>
                                 <i className="fa fa-angle-double-down animated"></i>
                         </button>
                         </div>
@@ -132,8 +135,7 @@ function Home() {
         let road = document.getElementById("road");
         let text1 = document.getElementsByClassName("text")[0];
         let text2 = document.getElementsByClassName("text")[1];
-        
-        
+        let button = document.getElementsByClassName("button-link");
         window.addEventListener('scroll', function () {
             var value = window.scrollY;
             bg.style.top = value * 0.5 + 'px';
@@ -143,8 +145,18 @@ function Home() {
             text2.style.top = value * 1 + 'px';
             
         });
-        
+
+        const scrollButton = () => {
+            const show = window.scrollY > 100;
+            if (buttonRef.current !== show) {
+                    setShowButton(show);
+            }
+        };
+        document.addEventListener("scroll", scrollButton);
+        return () => document.removeEventListener("scroll", scrollButton);
+
     }, []);
+
     
     return (
         <div className="main-wrapper overflow-hidden">
