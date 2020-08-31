@@ -114,7 +114,7 @@ function Home() {
 
                     <div  className=" text-center">
 
-                            <button style={{opacity : `${showButton ? 0 : 1}`}} className="btn btn-circle button-link " onClick={() => scrollToRef(aboutRef)}>
+                            <button /* style={{opacity : `${showButton ? 0 : 1}`}} */className="btn btn-circle button-link " onClick={() => scrollToRef(aboutRef)}>
                                 <i className="fa fa-angle-double-down animated"></i>
                         </button>
                         </div>
