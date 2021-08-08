@@ -1,41 +1,64 @@
 import React from "react";
-import { useSpring, animated as a } from 'react-spring'
-import { Row, Col } from "react-bootstrap";
-import profile from '../assets/avatar.JPG'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import { Row, Col} from "react-bootstrap";
+import profile from '../assets/profile.webp'
+import Constants from "../Constants";
 function About(props) {
+    const skills = Constants.skils;
 
-    const renderProfile = () => (
-        <div className="content ">
-            <div className="text-center"><img src={profile} className="profile-image diamond-img shadow" /></div>
-            <div className="type-writer">
-            <p className="type text-center ">
-                A front-end web developer with over 2 years of experience.
-            </p>
-            <p className="type text-center ">
-                I have serious passion for UI effects, animations and creating intuitive,
-            dynamic user experiences.
-            </p>
-            </div>
+
+      const renderProfile = () => (
+        <div className='image-wrapper'>
+          <img src={profile} className='profile-image diamond-img shadow' alt="profile"/>
         </div>
-
-    );
-
-    return (
-        <div className="about-wrapper align-items-center ">
-            <Row>
-                <Col className="section-title mx-auto text-center" xs={{ offset: 3, span: 9 }} md={{ offset: 4, span: 8 }}>ABOUT ME</Col>
-
-            </Row>
-           
-            <Row >
-                <Col className="content-wrapper ">
-                    {renderProfile()}
-                </Col>
-            </Row>
+      );
+    
+      const renderOffer = () => (
+        <div className='my-5'>
+          <p>Hi there! I'm Toan, a software engineer in Dallas, TX</p>
+          <p>
+            I have graduated from the University of Texas Dallas majoring in Computer Science.
+            I enjoy challenges whether that be websites, applications, or anything in between.
+            My goal is to build products that can help people with daily life's basis.
+             
+          </p>
         </div>
-    );
+      );
+    
+      const renderSkillSet = () => (
+        <div className='skill-set'>
+          <p>Here are a few technologies I've been working with recently:</p>
+          <ul className='skills-list'>
+            {skills && skills.map((skill, i) => <li key={i}>{skill.name}</li>)}
+          </ul>
+        </div>
+      );
+      return (
+        <>
+          <div>
+            <Row
+              className='content-wrapper'
+              data-aos='fade-up'
+              data-aos-delay='150'
+              data-aos-once='true'
+              data-aos-duration='500'>
+              <Col xs={{order: 2, span: 12}} lg={{order: 1, span: 7}}>
+                {renderOffer()}
+              </Col>
+              <Col xs={{order: 1, span: 12}} lg={{order: 2, span: 5}}>
+                {renderProfile()}
+              </Col>
+            </Row>
+            <Row
+              data-aos='fade-up'
+              data-aos-delay='300'
+              data-aos-once='true'
+              data-aos-duration='1500'>
+              <Col xs={12} lg={5}>
+                {renderSkillSet()}
+              </Col>
+            </Row>
+          </div>
+        </>
+      );
 }
 export default About;

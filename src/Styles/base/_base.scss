@@ -1,88 +1,131 @@
 @import "./_setting.scss";
 
 html {
-    font-size: 16px;
+    font-size: 62.5%;
     overflow-x: hidden;
-    
 }
-
 body {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    
-    font-size: 16px;
+    font-family: $font-text;
+    font-size: $font-size-medium;
     overflow-x: hidden;
-    background-color:black ;
+    background-color: #071528;
+    color: $text-color-1;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
-
-.section-title {
-    font-size: $font-size-xxlarge;
-    color: $home-color;
-    font-weight: bolder;
+body.nav-open {
+    @media (max-width: $desktop-breakpoint-phone) {
+        position: fixed;
+    }
 }
-
-.footer-name {
+.highlight-text {
     color: $home-color;
-    background-color:black;
 }
-
-.quote {
-    color: $home-color;
+.portfolio {
     font-weight: bold;
-    font-size: $font-size-large;
-    text-align: center;
+    color: $home-color;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    font-family: $font-title;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
 }
-
+.main-wrapper {
+    width: 100%;
+    padding: 0 25px;
+    margin: auto;
+    @media (min-width: $desktop-breakpoint-phone) {
+      padding: 0 75px;
+    }
+    @media (min-width: $desktop-breakpoint-laptop) {
+      padding: 0;
+      max-width: 1000px;
+    }
+    @media (min-width: $desktop-breakpoint-biglaptop) {
+      max-width: 1400px;
+    }
+    .section-title {
+      font-size: $font-size-large;
+      color: $text-color-2;
+      //font-weight: bold;
+      font-family: $font-title;
+      position: relative;
+      display: block;
+      @media (min-width: $desktop-breakpoint-laptop) {
+        font-size: $font-size-title;
+      }
+      .highlight-text {
+        font-size: $font-size-medium;
+        margin-right: 10px;
+        font-weight: normal;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 1px;
+        top: 40px;
+        left: 40px;
+        background-color: $text-color-2;
+        opacity: 0.3;
+        @media (min-width: $desktop-breakpoint-laptop) {
+          top: 50px;
+        }
+      }
+    }
+}
 @-webkit-keyframes slideInLeft {
     from {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
     }
-
+  
     to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
-}
-
-@keyframes slideOutLeft {
+  }
+  
+  @keyframes slideOutLeft {
     from {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
-
+  
     to {
-        visibility: hidden;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
+      visibility: hidden;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
     }
-}
-
-@-webkit-keyframes fadeIn {
+  }
+  
+  @-webkit-keyframes fadeIn {
     from {
-        opacity: 0;
+      opacity: 0;
     }
-
+  
     to {
-        opacity: 1;
+      opacity: 1;
     }
-}
-
-@keyframes fadeOut {
+  }
+  
+  @keyframes fadeOut {
     from {
-        opacity: 1;
+      opacity: 1;
     }
-
+  
     to {
-        opacity: 0;
+      opacity: 0;
     }
-}
-
-.page-enter {
+  }
+  
+  .page-enter {
     animation: fadeIn 1s forwards;
-}
-
-.page-exit {
+  }
+  
+  .page-exit {
     animation: fadeOut 1s forwards;
-}
-
+  }

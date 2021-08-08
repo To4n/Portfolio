@@ -2,165 +2,64 @@
 .home-wrapper {
     min-height: 100vh;
     overflow: hidden;
-    
-   
-}
-.home-phone {
-    display: block;
-
-    @media (min-width: 767.5px ) {
-        display: none;
-    }
-}
-
-.phone-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-    overflow:hidden;
-    
-}
-
-#bgphone {
-    z-index: -2;
-}
-
-.sectionphone {
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index:0;
-}
-.home-laptop {
-    display: block;
-
-    @media (max-width: 767px) {
-        display: none;
+    justify-content: center;
+    @media (min-width: $desktop-breakpoint-laptop) {
+      display: block;
     }
 }
+
 .hello-message-1 {
     font-size: $font-size-xtitle;
+    font-family: $font-title;
+    font-weight: bolder;
     color: white;
-    font-weight: 700;
-    //position: relative;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align:center;
-    @media (max-width: $desktop-breakpoint-sm-phone) {
-        font-size: $font-size-xlarge;
-    }
 }
 
 .hello-message-2 {
     font-size: $font-size-large;
+    
     color: white;
     font-weight: lighter;
     position: relative;
     text-align: center;
-
-    @media (max-width: $desktop-breakpoint-sm-phone) {
-        font-size: $font-size-medium;
-    }
 }
-
-
-
 
 .media-wrapper {
-    background-color: transparent;
-    z-index: 11;
-    position: absolute;
-    top: 10%;
-    left: 4%;
-
-
-    @media (max-width: $desktop-breakpoint-phone) {
-        top: 10%;
+    display: none;
+    @media (min-width: $desktop-breakpoint-phone) {
+      display: initial;
+      position: fixed;
+      top: 25%;
+      right: 30px;
     }
-
+  
     i {
-        margin-top: 2rem;
+      margin-top: 2rem;
+      color: $home-color-light;
+      font-size: $font-size-xlarge;
+      transition: all 0.5s ease;
+      @media (max-width: $desktop-breakpoint-phone) {
+        font-size: $font-size-xlarge;
+      }
+  
+      &:hover {
         color: $home-color;
-        font-size: $font-size-medium;
-        transition: all 0.5s ease;
-
-        @media (max-width: $desktop-breakpoint-phone) {
-            font-size: $font-size-medium;
-
-        }
-
-        &:hover {
-            color: white;
-            transform: scale(1.25);
-
-            @media (max-width: $desktop-breakpoint-phone) {
-                color: white;
-                transform: scale(1.25);
-                
-            }
-        }
+        transform: scale(1.2) translateX(-5px);
+      }
     }
-}
-
-.button-link {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    margin-top: auto;
-    margin-bottom: auto;
-    cursor: pointer;
-    outline: none !important;
-    z-index: 11;
-    border: 5px solid $home-color;
-    font-size: $font-size-xlarge;
-    color: $home-color;
-    text-align: center;
-    border-radius: 100%;
-    @media screen and (max-width:$desktop-breakpoint-phone) {
-        font-size: $font-size-xlarge;
-        //right: 8rem;
-        top: 7.5rem;
-    }
-
-    @media screen and (max-width:1024px) {
-        font-size: $font-size-xlarge;
-        //right: 8rem;
-        top: 8.5rem;
-    }
-
-
-
-
-    &:hover {
-
-        background-color: white !important;
-        border-color: white !important;
-        color: $theme-color-5 !important;
-        cursor: pointer;
-        transition: ease-in-out;
-        //animation: 1s impulse infinite alternate-reverse;
-
-    }
-
-
-}
-
-@keyframes impulse{
-    from{
-        opacity: 100%;
-    }
-    to{
-        opacity: 50%;
-    }
+  }
+.banner {
+  position:absolute;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
 }
 .section {
     max-width:100%;
@@ -182,8 +81,6 @@
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-
-    
 }
 
 .section::before {
@@ -204,7 +101,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: $theme-color-5;
+    background: $back-ground-2;
     z-index: 10;
     //background: linear-gradient(to top,$theme-color-1, transparent);
     mix-blend-mode: color;
@@ -214,7 +111,7 @@
 .text{
     position: relative;
     z-index: 2;
-    text-shadow: 4px 4px 8px #779d9d;
+    text-shadow: 4px 4px 8px $home-color;
     
 }
 

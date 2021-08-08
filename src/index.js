@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import AppRouter from './Routes.js';
 import { StateProvider } from "./Store.js";
 import "./Styles/style.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import * as serviceWorker from './serviceWorker';
 
+AOS.init();
 
 ReactDOM.render(
     <React.StrictMode>

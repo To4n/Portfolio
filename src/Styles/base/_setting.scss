@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@500;700;900&display=swap');
+
+//Font-family
+$font-text: "Comfortaa", sans-serif;
+$font-title: "Tourney", cursive;
+
 $xxs-size: 0.5rem;
 $xs-size: 0.9rem;
 $s-size: 1.2rem;
@@ -9,7 +16,8 @@ $l-size: 3.2rem;
 $xl-size: 4.6rem;
 $xxl-size: 8.5rem;
 $desktop-breakpoint-phone: 768px;
-$desktop-breakpoint-laptop: 992px;
+$desktop-breakpoint-laptop: 1080px;
+$desktop-breakpoint-biglaptop: 1600px;
 $desktop-breakpoint-sm-phone:425px;
 //font-size
 $font-size-xtitle: 5.0rem;
@@ -21,19 +29,16 @@ $font-size-medium: 1.4rem;
 $font-size-small: 1.2rem;
 $font-size-xsmall: 0.9rem;
 $font-size-xxsmall: 0.5rem;
+
 //color
-$home-color: #ccf3ff;
-$back-ground-1: black;
-$back-ground-2:white;
-$text-color-1: white;
-$text-color-2:black;
-$theme-color-1: #0d2b45;
-$theme-color-2: #d9d9d9;
-$theme-color-3: #262d40 ;
-$theme-color-4: #d9a79c;
-$theme-color-5: #151b40 ; 
+$home-color: #F2CB05;
+$home-color-light: rgba(
+  $color: $home-color,
+  $alpha: 0.6,
+);
+$back-ground-1: #0D2340;
+$back-ground-2: rgb(23, 42, 69);
+$text-color-1: rgb(141, 142, 169);
+$text-color-2: rgb(211, 211, 223);
 $blue: #1c88bf;
 $red: rgb(184, 57, 57);
-
-//Font-family
-$fancy-font: 'Gochi Hand', cursive;

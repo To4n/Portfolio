@@ -1,59 +1,79 @@
-.project-title {
-    font-size: $font-size-large;
-    font-weight: bolder;
-    display: block;
-    align-content: center;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    color: white;
-    margin-bottom: 35px;
-    text-transform:uppercase;
-}
-
-.project-showcase {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    @media (max-width: $desktop-breakpoint-phone) {
-        padding-top: 100px;
+#Projects {
+    margin-top: 100px;
+    @media (min-width: $desktop-breakpoint-laptop) {
+      width: 100%;
+      margin: auto;
+      margin-top: 150px;
     }
-}
-
-
-
-.project-container {
-    padding: 0 15px;
-    margin: 10px 10px 10px 10px;
-    padding:10px;
-
-    
-}
-
-.gallery {
-    margin-bottom: 20px;
-    align-content:center;
-    justify-content:center;
-}
-
-.gallery img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20rem;
-    height: 15rem;
-    padding: 1rem 1rem;
-    @media (max-width: $desktop-breakpoint-phone) {
-        width: 17rem;
-        height: 12rem;
+    .project-listing {
+      margin-top: 0px;
     }
-}
-.project-name {
-    color: $theme-color-2;
-    font-weight: bolder;
-    font-size: $font-size-medium;
-}
-
-
-
-
-
+    .subsection-title {
+      font-size: $font-size-xlarge;
+      color: $text-color-2;
+      font-weight: bold;
+      font-family: $font-title;
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  .card {
+    background-color: $back-ground-2;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: all 300ms ease-out;
+    &:hover {
+      transform: translateY(-7px);
+    }
+    .card-content {
+      padding: 25px;
+      min-height: 325px;
+      display: flex;
+      flex-direction: column;
+      .icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icon-wrapper {
+          display: flex;
+          .git-icon {
+            color: $text-color-1;
+            width: 20px;
+            height: 20px;
+            transition: transform 300ms ease;
+            margin-right: 20px;
+            margin-top: -2px;
+            &:hover {
+              transform: scale(1.05);
+              color: $home-color;
+            }
+          }
+          .detail {
+            width: 20px;
+            height: 20px;
+            transition: all 300ms ease-out;
+            background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon='external-link-alt' class='svg-inline--fa fa-external-link-alt fa-w-16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%238D8EA9' d='M432 320h-32a16 16 0 00-16 16v112H64V128h144a16 16 0 0016-16V80a16 16 0 00-16-16H48a48 48 0 00-48 48v352a48 48 0 0048 48h352a48 48 0 0048-48V336a16 16 0 00-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 000 34L157.67 377a24 24 0 0034 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 00-24-24z'/%3E%3C/svg%3E");
+            &:hover {
+              transform: scale(1.05);
+              background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon='external-link-alt' class='svg-inline--fa fa-external-link-alt fa-w-16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%2364FFDA' d='M432 320h-32a16 16 0 00-16 16v112H64V128h144a16 16 0 0016-16V80a16 16 0 00-16-16H48a48 48 0 00-48 48v352a48 48 0 0048 48h352a48 48 0 0048-48V336a16 16 0 00-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 000 34L157.67 377a24 24 0 0034 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 00-24-24z'/%3E%3C/svg%3E");
+            }
+          }
+        }
+      }
+      .project-name {
+        font-size: $font-size-large;
+        color: $text-color-2;
+        margin: 15px 0;
+        font-weight: bold;
+      }
+      .project-sammary {
+        margin-bottom: auto;
+        font-size: $font-size-small;
+      }
+      .project-tech {
+        font-size: $font-size-small;
+        font-family: $font-title;
+      }
+    }
+  }
