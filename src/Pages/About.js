@@ -16,10 +16,13 @@ function About(props) {
         <div className='my-5'>
           <p>Hi there! I'm Toan, a software engineer in Dallas, TX</p>
           <p>
-            I have graduated from the University of Texas Dallas majoring in Computer Science.
-            I enjoy challenges whether that be websites, applications, or anything in between.
-            My goal is to build products that can help people with daily life's basis.
-             
+            I have graduated from the University of Texas Dallas majoring in Computer Science in 2020.
+            
+            Since then, I have worked for Aperia Solutions as a front-end developer
+            for Fiserv where I have hand-on experiences with 
+            various types of projects that provides financial technology services to clients 
+            across the financial services sector
+            
           </p>
         </div>
       );

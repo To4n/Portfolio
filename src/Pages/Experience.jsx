@@ -10,7 +10,7 @@ function Experience(props)  {
   
     const onActiveHandle = (name) => {
       setActive(name);
-      setFilteredData(data.find((item) => item.company == name).information);
+      setFilteredData(data.find((item) => item.company === name).information);
     };
 
     const renderFitler = () => (

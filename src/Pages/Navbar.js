@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Navbar(props) {
     const [toggle, setToggle] = React.useState(false);
@@ -69,20 +69,21 @@ function Navbar(props) {
                 </div>
                     {items &&
                         items.map((item, index) => (
-                            <>
+                            
                                 <Link
                                     activeClass="active-navlink"
                                     to={item}
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
+                                    key={index}
                                 >
                                     <li onClick={ontoggleHandle}>
                                         <span className="special">0{index + 1}. </span>
                                         {item}
                                     </li>
                                 </Link>
-                            </>
+                            
                         ))}
 
                 </ul>
